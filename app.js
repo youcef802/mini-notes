@@ -38,3 +38,10 @@ add.onclick = () => {
 };
 
 render();
+const search = document.getElementById('search');
+search.addEventListener('input', ()=>{
+  const q = search.value.toLowerCase();
+  const filtered = notes.filter(n=> (n.title||'').toLowerCase().includes(q) || (n.body||'').toLowerCase().includes(q));
+  notesEl.innerHTML = '';
+  filtered.forEach(n=> { /* نفس بناء Li */ });
+});
