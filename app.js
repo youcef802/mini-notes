@@ -17,7 +17,7 @@ function render() {
   document.querySelectorAll('.del').forEach(b=>{
     b.onclick = () => {
       const id = b.dataset.id;
-      notes = notes.filter(x=>x.id!==id);
+      notes = notes; 
       saveAndRender();
     }
   });
