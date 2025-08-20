@@ -1,0 +1,4 @@
+body{font-family:Arial;padding:20px;background:#f3f4f6}
+input,textarea{display:block;width:100%;margin:6px 0;padding:8px}
+button{padding:8px 12px}
+.note{background:#fff;padding:8px;margin:6px 0;border-radius:6px}
